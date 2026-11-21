@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Saffron & Hearth — Artisanal Dining, Metro City. Oven-baked pide dishes, bite-sized plates and drinks. Made fresh each day. Free delivery within Metropolitan District 3.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23111111'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='38'%20fill='%23f5f0e6'%20text-anchor='middle'%3EI%3C/text%3E%3Crect%20x='23'%20y='51'%20width='18'%20height='2'%20fill='%23a8865c'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Saffron & Hearth">
+<meta property="og:locale" content="en_PK">
+<meta property="og:title" content="Saffron & Hearth — Artisanal Dining | Metro City">
+<meta property="og:description" content="Oven-baked pide dishes, bite-sized plates and drinks. Made fresh each day. Free delivery within Metropolitan District 3.">
+<meta property="og:image" content="images/og-cover.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="400">
+<meta property="og:image:alt" content="Saffron & Hearth signature pide dishes on a bright table">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Saffron & Hearth — Artisanal Dining | Metro City">
+<meta name="twitter:description" content="Oven-baked pide dishes, bite-sized plates and drinks. Made fresh each day. Free delivery within Metropolitan District 3.">
+<meta name="twitter:image" content="images/og-cover.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Saffron & Hearth",
+  "alternateName": "Saffron & Hearth - Artisanal Dining",
+  "description": "Saffron & Hearth, Metro City: oven-baked pide dishes, bite-sized plates and drinks, made fresh and made to order.",
+  "servesCuisine": "Fusion",
+  "priceRange": "Rs 200–1,600",
+  "telephone": "+9100000000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "42 Culinary Avenue, District 1",
+    "addressLocality": "Metro City",
+    "addressCountry": "PK"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "11:30",
+    "closes": "00:00"
+  }]
+}
+</script>
+<title>Saffron & Hearth — Artisanal Dining | Metro City</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --black:#111111;--black-soft:#1c1c1c;--white:#ffffff;
+ --cream:#f5f0e6;--cream-deep:#ece5d9;--beige:#e8e1d5;
+ --text:#171717;--muted:#68645e;--border:#e3dccf;
+ --gold:#a8865c;--gold-soft:#d3c2a6;
+ --spacing-xs:.5rem;--spacing-sm:1rem;--spacing-md:1.5rem;
+ --spacing-lg:2rem;--spacing-xl:3rem;--spacing-2xl:4rem;--spacing-3xl:5rem;
+ --transition:all .35s cubic-bezier(.25,.46,.45,.94);
+ --transition-fast:all .2s ease-out;
+ --header-h:82px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}
+body{font-family:'Geist',sans-serif;color:var(--text);background:var(--cream);line-height:1.6;overflow-x:hidden}
+body.modal-open,body.nav-open{overflow:hidden}
+a{color:inherit}
+button{font:inherit}
+.loader{position:fixed;inset:0;background:var(--cream);display:flex;align-items:center;justify-content:center;z-index:9999;animation:fadeOut .65s ease 1.1s forwards}
+.loader-inner{text-align:center}
+.loader-inner span{font:700 3.5rem 'Crimson Text',serif;letter-spacing:.3em;color:var(--black);display:block;margin-bottom:1.5rem}
+.loader-line{width:50px;height:3px;background:var(--black);margin:auto;border-radius:2px;animation:expandLine 1.2s ease-in-out infinite}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}@keyframes expandLine{0%,100%{transform:scaleX(0)}50%{transform:scaleX(1)}}
+@keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.site-header{position:fixed;inset:0 0 auto;background:rgba(245,240,230,.94);backdrop-filter:blur(15px);padding:1rem var(--spacing-lg);display:flex;align-items:center;justify-content:space-between;z-index:100;border-bottom:1px solid var(--border);animation:slideDown .6s ease;box-shadow:0 2px 12px #0000000a}
+.brand,.footer-brand{font:700 1.9rem 'Crimson Text',serif;letter-spacing:.2em;color:var(--black);text-decoration:none;transition:var(--transition-fast)}
+.brand:hover{opacity:.65;transform:scale(1.04)}
+.desktop-nav{display:flex;gap:var(--spacing-2xl);align-items:center}
+.desktop-nav a,.mobile-nav a{color:var(--text);text-decoration:none;font-size:.95rem;font-weight:500;transition:var(--transition-fast)}
+.desktop-nav a:hover,.mobile-nav a:hover{color:#777}
+.nav-cta,.hero-cta-primary,.directions-button{background:var(--black);color:var(--white)!important;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:1px solid var(--black);transition:var(--transition-fast)}
+.nav-cta{padding:.75rem 1.6rem;border-radius:50px;font-size:.9rem}
+.nav-cta:hover,.hero-cta-primary:hover,.directions-button:hover{background:#333;transform:translateY(-3px);box-shadow:0 10px 25px #0002}
+.mobile-menu-button{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:6px;padding:.5rem}
+.mobile-menu-button span{width:24px;height:2px;background:var(--black);transition:var(--transition-fast)}
+.mobile-nav{display:none;position:fixed;inset:0;background:var(--cream);z-index:99;padding-top:calc(var(--header-h) + 6px)}
+.mobile-nav.active{display:flex;flex-direction:column;animation:fadeIn .25s}
+.mobile-nav-inner{display:flex;flex-direction:column;gap:1.5rem;padding:2rem}
+.mobile-nav a{font-size:1.25rem}
+main{margin-top:var(--header-h)}
+.hero{position:relative;min-height:700px;height:calc(100vh - var(--header-h));display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--black)}
+.hero-image{position:absolute;inset:0;z-index:1}
+.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,8,8,.78),rgba(17,17,17,.52) 52%,rgba(8,8,8,.86));z-index:2}
+.hero-content{position:relative;z-index:3;text-align:center;color:var(--white);padding:var(--spacing-lg);max-width:1000px;animation:fadeIn .8s .25s backwards}
+.hero-kicker{font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85;margin-bottom:var(--spacing-lg);font-weight:600}
+.hero-title{font:700 clamp(2.8rem,9vw,5.5rem)/1.15 'Crimson Text',serif;margin-bottom:var(--spacing-xl);letter-spacing:-.02em}
+.hero-title em{font-style:italic;color:var(--cream);-webkit-text-fill-color:var(--cream)}
+.hero-bottom{max-width:600px;margin:auto}
+.hero-bottom p{font-size:1.05rem;line-height:1.8;opacity:.92;font-weight:300;letter-spacing:.04em}
+.hero-cta{display:flex;gap:var(--spacing-md);justify-content:center;margin-top:var(--spacing-2xl)}
+.hero-cta-primary,.hero-cta-secondary{padding:1rem 2.1rem;border-radius:50px;font-size:.95rem}
+.hero-cta-secondary{background:rgba(255,255,255,.08);color:white;text-decoration:none;border:1px solid rgba(255,255,255,.5);transition:var(--transition-fast)}
+.hero-cta-secondary:hover{background:var(--cream);color:var(--black);border-color:var(--cream)}
+.section-padding{padding:var(--spacing-3xl) var(--spacing-lg)}
+.featured-section,.menu-section,.visit-section{background:var(--cream);padding:var(--spacing-3xl) var(--spacing-lg)}
+.featured-section{background:var(--white)}
+.featured-content,.menu-inner,.section-inner,.story-container,.testimonials-content,.footer-content{max-width:1200px;margin:auto}
+.featured-header,.menu-header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:var(--spacing-2xl)}
+.featured-header h2,.menu-header h2,.story-heading,.visit-heading h2{font:700 clamp(2rem,5vw,3.2rem)/1.2 'Crimson Text',serif;color:var(--text)}
+.featured-header em,.menu-header em,.story-heading em,.visit-heading em{font-style:italic;color:var(--black)}
+.featured-description,.menu-intro,.visit-heading p{font-size:1rem;line-height:1.8;color:var(--muted);margin:0 auto;max-width:620px;text-align:center}
+
+.fav-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--spacing-lg)}
+.fav-card{display:flex;flex-direction:column;gap:0;background:var(--cream);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:var(--transition)}
+.fav-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #00000012;border-color:var(--gold-soft)}
+.fav-thumb{width:100%;aspect-ratio:4/3;flex:none;background:#fff;border-bottom:1px solid var(--gold-soft);padding:10px;box-sizing:border-box;overflow:hidden}
+.fav-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.fav-body{min-width:0;padding:1.25rem}
+.fav-name{display:flex;align-items:baseline;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
+.fav-name h3{font-size:1.08rem;letter-spacing:.01em}
+.fav-price{font-size:.85rem;font-weight:700;white-space:nowrap;color:var(--text)}
+.fav-desc{font-size:.85rem;line-height:1.65;color:var(--muted);margin-top:.35rem}
+
+.menu-nav{display:flex;justify-content:center;gap:.55rem;flex-wrap:wrap;max-width:100%;margin-bottom:var(--spacing-2xl);padding:0 0 8px;border-bottom:1px solid var(--border)}
+.menu-nav::-webkit-scrollbar{height:4px}.menu-nav::-webkit-scrollbar-track{background:var(--cream-deep);border-radius:999px}.menu-nav::-webkit-scrollbar-thumb{background:var(--gold);border-radius:999px}.menu-nav::-webkit-scrollbar-thumb:hover{background:var(--black)}
+.menu-nav a{flex:none;font-size:.83rem;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--border);border-radius:50px;padding:.5rem 1.05rem;transition:var(--transition-fast);background:var(--white)}
+.menu-nav a:hover{border-color:var(--black);color:var(--black);transform:translateY(-2px)}
+.menu-nav a[aria-current="true"]{border-color:var(--black);background:var(--black);color:var(--cream)}
+.menu-cat[hidden]{display:none}
+.menu-categories{display:grid;gap:var(--spacing-3xl)}
+.menu-cat,.menu-section{scroll-margin-top:calc(var(--header-h) + 20px)}
+.cat-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:var(--spacing-lg);padding-bottom:.85rem;border-bottom:1px solid var(--border)}
+.cat-head h3{font:700 clamp(1.5rem,3vw,2.1rem)/1.15 'Crimson Text',serif}
+.cat-head p{font-size:.9rem;line-height:1.7;color:var(--muted);margin:0 auto;max-width:620px;text-align:center}
+.base-note{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:.6rem}
+.cat-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:0 var(--spacing-2xl)}
+.menu-item{display:grid;grid-template-columns:160px minmax(0,1fr);gap:1.15rem;align-items:center;padding:1rem .6rem 1rem 0;border-bottom:1px solid rgba(227,220,207,.85);cursor:pointer;border-radius:10px;transition:background var(--transition-fast)}
+@media(hover:hover){.menu-item:hover{background:rgba(255,255,255,.72)}}
+.menu-item:active{background:rgba(255,255,255,.72)}
+.menu-item:focus-visible{outline:3px solid var(--black);outline-offset:2px}
+.menu-thumb{width:160px;height:120px;flex:none;overflow:visible}
+.menu-thumb img{width:100%;height:100%;box-sizing:border-box;object-fit:contain;background:#fff;border:1px solid var(--gold-soft);border-radius:14px;padding:6px;box-shadow:0 6px 18px rgba(119,83,42,.16);display:block}
+.menu-body{min-width:0}
+.menu-title{display:flex;align-items:baseline;gap:.55rem;flex-wrap:wrap}
+.menu-title h4{font-size:1.02rem;font-weight:700;letter-spacing:.005em}
+.menu-desc{font-size:.82rem;line-height:1.6;color:var(--muted);margin:.2rem 0 .45rem;max-width:46ch}
+.price-row{display:flex;align-items:baseline;gap:.4rem;font-size:.9rem;margin-top:.2rem}
+.price-label{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;white-space:nowrap}
+.dots{flex:1 1 auto;border-bottom:1px dotted #c4b9a7;margin:0 .45rem;transform:translateY(-.18em);min-width:18px}
+.price-value{font-weight:700;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--border);background:var(--cream-deep);color:var(--text);border-radius:50px;padding:.1rem .55rem;font-size:.68rem;font-weight:600;letter-spacing:.05em;line-height:1.7;cursor:default}
+.pill-or{font-size:.66rem;font-style:italic;color:var(--muted)}
+
+.story{background:var(--white);padding:var(--spacing-3xl) var(--spacing-lg)}
+.story-inner{max-width:780px;margin:auto;text-align:center}
+.story-heading{margin:0 auto var(--spacing-lg);text-align:center}
+.story-inner p{font-size:1rem;line-height:1.95;color:var(--muted);margin-bottom:var(--spacing-lg)}
+.story-inner p.story-lead{font-size:1.18rem;line-height:1.8;color:var(--text);font-weight:600;max-width:620px;margin:0 auto var(--spacing-lg);text-align:center}
+.story-rule{width:52px;height:1px;background:var(--gold);margin:var(--spacing-xl) auto}
+.story-note{font-size:.82rem!important;color:var(--muted)!important;line-height:1.7!important;margin-bottom:0!important}
+
+.item-modal{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);z-index:5000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;pointer-events:none;transition:.25s}
+.item-modal.active{opacity:1;visibility:visible;pointer-events:auto}
+.item-modal-content{width:min(100%,900px);max-height:90vh;overflow-y:auto;background:var(--cream);border-radius:16px;position:relative;transform:translateY(20px) scale(.98);transition:.3s}
+.item-modal.active .item-modal-content{transform:none}
+.item-modal-top{display:grid;grid-template-columns:.95fr 1.05fr;min-height:430px}
+.item-modal-image{min-height:430px;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:1.6rem}
+.item-modal-image img{max-width:100%;max-height:280px;width:auto;height:auto;object-fit:contain;background:#fff;border-radius:12px;display:block}
+.item-modal-info{padding:clamp(1.5rem,5vw,3.2rem);display:flex;flex-direction:column;justify-content:center}
+.item-modal-category{color:var(--black);text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:700}
+.item-modal-title{font:700 clamp(2rem,5vw,2.8rem)/1.1 'Crimson Text',serif;margin:.5rem 0 .9rem;color:var(--text)}
+.item-modal-price{margin-bottom:1.1rem}
+.item-modal-price .price-row{font-size:.95rem}
+.item-modal-description{color:var(--muted);line-height:1.75;font-size:.92rem}
+.item-modal-pills{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.item-modal-note{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-top:.9rem}
+.modal-order{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;align-self:flex-start;margin-top:1.25rem;background:var(--black);color:var(--cream);text-decoration:none;font-size:.9rem;font-weight:600;border:1px solid var(--black);border-radius:50px;padding:.8rem 1.55rem;transition:var(--transition-fast)}
+.modal-order:hover{background:#2a2a2a;transform:translateY(-2px);box-shadow:0 10px 24px #0002}
+.item-modal-close{position:absolute;top:.8rem;right:.8rem;width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:var(--cream);color:var(--black);font-size:1.5rem;cursor:pointer;z-index:5;line-height:1}
+.item-modal-close:hover{background:var(--black);color:white}
+[hidden]{display:none!important}
+
+.testimonials-section{background:var(--black);color:var(--cream);padding:var(--spacing-3xl) var(--spacing-lg)}
+.testimonials-header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;max-width:700px;margin:0 auto var(--spacing-3xl)}
+.testimonials-header h2{font:700 clamp(2rem,5vw,3rem)/1.2 'Crimson Text',serif}
+.testimonials-header em{color:var(--cream);font-style:italic}.testimonials-header p{opacity:.75;margin:0 auto;max-width:620px;text-align:center}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--spacing-2xl)}
+.testimonial-card{background:var(--black-soft);border:1px solid #ffffff24;padding:var(--spacing-2xl);border-radius:12px;display:flex;flex-direction:column;gap:var(--spacing-lg);transition:var(--transition)}
+.testimonial-card:hover{border-color:#ffffff70;transform:translateY(-5px)}
+.testimonial-stars{display:flex;gap:4px;color:var(--cream)}
+.testimonial-text{font-size:.94rem;line-height:1.8;opacity:.9;flex:1}
+.testimonial-author{display:flex;align-items:center;gap:var(--spacing-md);border-top:1px solid #ffffff22;padding-top:var(--spacing-lg)}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:var(--cream);color:var(--black);display:grid;place-items:center;font-weight:700;flex-shrink:0}
+.testimonial-info h4{font-size:.95rem}.testimonial-info p{font-size:.8rem;opacity:.6}
+.reviews-link-container{text-align:center}.google-reviews-button{display:inline-flex;gap:.7rem;align-items:center;margin-top:var(--spacing-2xl);padding:.95rem 1.7rem;border:1px solid #ffffff55;border-radius:50px;color:white;text-decoration:none;font-size:.9rem;font-weight:600;transition:var(--transition-fast)}
+.google-reviews-button:hover{background:var(--cream);color:var(--black);border-color:var(--cream)}
+.marquee{background:var(--black);color:var(--cream);padding:var(--spacing-2xl) 0;overflow:hidden;margin:var(--spacing-3xl) 0}
+.marquee-track{display:flex;gap:var(--spacing-lg);width:max-content;animation:marquee 25s linear infinite}
+.marquee-set{display:flex;gap:var(--spacing-lg);white-space:nowrap;font-size:1.15rem;font-weight:600;letter-spacing:.05em}
+.marquee-set i{font-style:normal;color:#bdb5a8}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+.visit-section{background:var(--cream)}
+.visit-heading{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:var(--spacing-3xl)}
+.visit-heading h2{margin:0}
+.visit-heading p{margin:0 auto;max-width:620px;text-align:center}
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--spacing-2xl);margin-bottom:var(--spacing-3xl)}
+.visit-card{background:white;border:1px solid var(--border);padding:var(--spacing-2xl);border-radius:12px;display:flex;gap:var(--spacing-lg);box-shadow:0 2px 12px #00000008;transition:var(--transition)}
+.visit-card:hover{border-color:#bdb5a8;box-shadow:0 12px 30px #00000012;transform:translateY(-5px)}
+.visit-number{font:700 2.2rem 'Crimson Text',serif;color:var(--black);opacity:.25}
+.visit-label,.contact-type{font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;color:var(--black);font-weight:700;display:block;margin-bottom:.7rem}
+.visit-card h3{font-size:1.2rem;margin-bottom:.5rem}.visit-card p{font-size:.9rem;line-height:1.65;color:var(--muted)}
+.contact-item{display:flex;flex-direction:column;gap:.25rem;margin-bottom:1rem}.contact-item a{font-weight:600;text-decoration:none}.contact-item a:hover{color:var(--muted)}
+.visit-bottom{text-align:center}.directions-button{padding:1rem 2.2rem;border-radius:50px}
+
+.footer{background:var(--black);color:var(--cream);padding:var(--spacing-3xl) var(--spacing-lg) var(--spacing-2xl)}
+.footer-top,.footer-middle{text-align:center;margin-bottom:var(--spacing-2xl);padding-bottom:var(--spacing-2xl);border-bottom:1px solid #ffffff24}
+.footer-brand{font-size:2rem;color:var(--cream);margin-bottom:.5rem}.footer-tagline,.footer-middle p{font-size:.9rem;opacity:.75}.footer-middle p{font-size:.95rem;line-height:1.8;max-width:450px;margin:auto}
+.footer-motto{font:italic 1.05rem 'Crimson Text',serif;color:var(--gold-soft);letter-spacing:.08em;margin-top:.4rem;opacity:.9}
+.footer-cta{margin-top:1.4rem}
+.footer-wa{display:inline-flex;align-items:center;gap:.5rem;border:1px solid #ffffff55;border-radius:50px;padding:.85rem 1.6rem;color:var(--cream);text-decoration:none;font-size:.9rem;font-weight:600;transition:var(--transition-fast)}
+.footer-wa:hover{background:var(--cream);color:var(--black);border-color:var(--cream)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--spacing-lg);font-size:.82rem;opacity:.7}
+.footer-links{display:flex;gap:var(--spacing-lg)}.footer-links a{color:var(--cream);text-decoration:none}.footer-links a:hover{opacity:.65}
+
+@media(max-width:900px){
+ .cat-items{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+ .desktop-nav,.site-header>.nav-cta{display:none}.mobile-menu-button{display:flex}
+ .featured-header,.menu-header,.cat-head{gap:10px}
+ .menu-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--gold) var(--cream-deep)}
+ :root{--header-h:73px}
+ .hero{min-height:650px;height:calc(100svh - var(--header-h))}
+ .hero-cta{flex-direction:column;align-items:center}.hero-cta a{width:min(100%,260px)}
+ .footer-bottom{flex-direction:column;text-align:center}.visit-card{flex-direction:column}
+ .item-modal{padding:.6rem}.item-modal-content{max-height:95vh}.item-modal-top{grid-template-columns:1fr}
+ .item-modal-image{min-height:0;padding:1.2rem}.item-modal-image img{max-height:240px}
+ .item-modal-info{padding:1.5rem}
+ .modal-order{align-self:stretch}
+ .fav-grid{grid-template-columns:1fr}
+ .menu-categories{gap:var(--spacing-2xl)}
+ .story-inner p:not(.story-lead){text-align:left}
+}
+@media(max-width:480px){
+ .section-padding{padding:var(--spacing-2xl) var(--spacing-md)}.hero-title{font-size:2.7rem}
+ .menu-item{grid-template-columns:112px minmax(0,1fr);gap:.9rem;align-items:center;padding:.9rem 0}
+ .menu-thumb{width:112px;height:84px}
+ .fav-body{padding:1rem}
+ .menu-desc{font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="loader" aria-hidden="true"><div class="loader-inner"><span>Saffron & Hearth</span><div class="loader-line"></div></div></div>
+
+<header class="site-header" id="siteHeader">
+ <a href="#top" class="brand">Saffron & Hearth</a>
+ <nav class="desktop-nav" aria-label="Main navigation">
+  <a href="#featured">Featured</a><a href="#menu">Menu</a><a href="#story">Story</a><a href="#visit">Visit</a>
+ </nav>
+ <a href="https://wa.me/9100000000?text=Hi%20Saffron%20%26%20Hearth%20Restaurant" class="nav-cta" target="_blank" rel="noopener" aria-label="Order on WhatsApp">WhatsApp ↗</a>
+ <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+ <div class="mobile-nav-inner"><a href="#featured">Featured</a><a href="#menu">Menu</a><a href="#story">Story</a><a href="#visit">Visit</a><a href="https://wa.me/9100000000?text=Hi%20Saffron%20%26%20Hearth%20Restaurant" target="_blank" rel="noopener">Order on WhatsApp ↗</a></div>
+</nav>
+
+<main id="top">
+<section class="hero">
+ <div class="hero-image">
+  <img src="images/placeholder.svg" alt="Saffron & Hearth signature pide dishes, freshly baked" width="900" height="513" fetchpriority="high" decoding="async">
+ </div>
+ <div class="hero-overlay"></div>
+ <div class="hero-content">
+  <div class="hero-kicker">Artisanal Dining · Metro City</div>
+  <h1 class="hero-title"><span>Made by us</span><br><em>every day.</em></h1>
+  <div class="hero-bottom"><p>%%SIGNATURE%%</p>
+   <div class="hero-cta"><a href="#menu" class="hero-cta-primary">Explore Menu</a><a href="#visit" class="hero-cta-secondary">Visit Saffron & Hearth</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="featured-section" id="featured">
+ <div class="featured-content">
+  <div class="featured-header"><h2>House <em>Favourites</em></h2><p class="featured-description">Three dishes to start with. Oven-baked, freshly prepared and served with our signature sauce.</p></div>
+  <div class="fav-grid">
+%%FAVOURITES%%
+  </div>
+ </div>
+</section>
+
+<section class="menu-section" id="menu"><div class="menu-inner">
+ <div class="menu-header"><h2>Eat <em>well.</em></h2><p class="menu-intro">Every item on our menu, with the sizes we serve. All prices in Pakistani Rupees — tap any dish for details.</p></div>
+ <nav class="menu-nav" aria-label="Menu categories">
+  <a href="#menu" data-filter="all" aria-current="true">All</a>
+  <a href="#cat-pide" data-filter="cat-pide">Pide</a>
+  <a href="#cat-halal-snack-pack" data-filter="cat-halal-snack-pack">Halal Snack Pack</a>
+  <a href="#cat-kebab" data-filter="cat-kebab">Kebab</a>
+  <a href="#cat-burgers" data-filter="cat-burgers">Burgers</a>
+  <a href="#cat-fish" data-filter="cat-fish">Fish</a>
+  <a href="#cat-sides" data-filter="cat-sides">Sides</a>
+  <a href="#cat-desserts" data-filter="cat-desserts">Desserts</a>
+  <a href="#cat-hot-drinks" data-filter="cat-hot-drinks">Hot Drinks</a>
+ </nav>
+ <div class="menu-categories" id="menuCategories">
+%%MENU%%
+ </div>
+</div></section>
+
+<section class="testimonials-section"><div class="testimonials-content">
+ <div class="testimonials-header"><h2>Loved by<br><em>our guests.</em></h2><p>Words from diners who have experienced Saffron & Hearth.</p></div>
+ <div class="testimonials-grid">
+  <article class="testimonial-card"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-text">"Warm vibes, rich food and on-time delivery."</p><div class="testimonial-author"><div class="testimonial-avatar">LF</div><div class="testimonial-info"><h4>Lucia F.</h4><p>5 Star Review</p></div></div></article>
+  <article class="testimonial-card"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-text">"Warm vibes, rich food and on-time delivery."</p><div class="testimonial-author"><div class="testimonial-avatar">LF</div><div class="testimonial-info"><h4>Lucia F.</h4><p>5 Star Review</p></div></div></article>
+  <article class="testimonial-card"><div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div><p class="testimonial-text">"Warm vibes, rich food and on-time delivery."</p><div class="testimonial-author"><div class="testimonial-avatar">LF</div><div class="testimonial-info"><h4>Lucia F.</h4><p>5 Star Review</p></div></div></article>
+ </div>
+ <div class="reviews-link-container"><a href="https://www.google.com/maps/search/Saffron%20and%20Hearth%20Restaurant" class="google-reviews-button" target="_blank" rel="noopener">★ &nbsp;Read More Reviews&nbsp; ↗</a></div>
+</div></section>
+
+<section class="marquee" aria-label="Saffron & Hearth highlights"><div class="marquee-track">
+ <div class="marquee-set"><span>Artisanal Dining</span><i>✦</i><span>Oven Fresh</span><i>✦</i><span>Genuine Flavour</span><i>✦</i><span>Artisanal Dining</span><i>✦</i><span>Oven Fresh</span><i>✦</i><span>Genuine Flavour</span><i>✦</i></div>
+ <div class="marquee-set" aria-hidden="true"><span>Artisanal Dining</span><i>✦</i><span>Oven Fresh</span><i>✦</i><span>Genuine Flavour</span><i>✦</i><span>Artisanal Dining</span><i>✦</i><span>Oven Fresh</span><i>✦</i><span>Genuine Flavour</span><i>✦</i></div>
+</div></section>
+
+<section class="story" id="story"><div class="story-container">
+ <div class="story-inner">
+  <h2 class="story-heading">Our <em>Story</em></h2>
+%%STORY%%
+  <div class="story-rule" aria-hidden="true"></div>
+  <p class="story-note">Free delivery is available within Metropolitan District 3.</p>
+ </div>
+</div></section>
+
+<section class="visit-section" id="visit"><div class="section-inner"><div class="visit-heading"><h2>See you<br><em>at Saffron & Hearth.</em></h2><p>Find us at 42 Culinary Avenue, Metro City.</p></div>
+ <div class="visit-grid">
+  <article class="visit-card"><span class="visit-number">01</span><div><span class="visit-label">Location</span><h3>City Plaza</h3><p>Metro City</p></div></article>
+  <article class="visit-card"><span class="visit-number">02</span><div><span class="visit-label">Hours</span><h3>Every Day</h3><p>Monday – Sunday<br>11:30 AM – 10:00 PM</p></div></article>
+  <article class="visit-card"><span class="visit-number">03</span><div><span class="visit-label">Contact</span><div class="contact-item"><span class="contact-type">Landline</span><a href="tel:+9100000000">000 000 0000</a></div><div class="contact-item"><span class="contact-type">WhatsApp</span><a href="https://wa.me/9100000000?text=Hi%20Saffron%20%26%20Hearth%20Restaurant" target="_blank" rel="noopener">+91 000000 0000</a></div></div></article>
+ </div>
+ <div class="visit-bottom"><a href="https://www.google.com/maps/dir/?api=1&destination=Saffron%20and%20Hearth%20Restaurant%2C%20Metro%20City" class="directions-button" target="_blank" rel="noopener">Get Directions ↗</a></div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="footer-content"><div class="footer-top"><div class="footer-brand">Saffron & Hearth</div><div class="footer-tagline">Artisanal Dining · Metro City</div><div class="footer-motto">Our Family Eats Here Too</div></div><div class="footer-middle"><p>%%SIGNATURE%%</p><div class="footer-cta"><a href="https://wa.me/9100000000?text=Hi%20Saffron%20%26%20Hearth%20Restaurant" class="footer-wa" target="_blank" rel="noopener">Order on WhatsApp ↗</a></div></div>
+ <div class="footer-bottom"><span>© 2026 Saffron & Hearth</span><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#visit">Visit</a></div><span>Metro City</span></div>
+</div></footer>
+
+<div class="item-modal" id="itemModal" role="dialog" aria-modal="true" aria-labelledby="itemModalTitle" aria-hidden="true">
+ <div class="item-modal-content"><button class="item-modal-close" id="itemModalClose" type="button" aria-label="Close item details">×</button>
+  <div class="item-modal-top"><div class="item-modal-image"><img id="itemModalImage" alt="" width="420" height="315" decoding="async"></div><div class="item-modal-info">
+   <span class="item-modal-category" id="itemModalCategory"></span><h2 class="item-modal-title" id="itemModalTitle"></h2><div class="item-modal-price" id="itemModalPrice"></div><p class="item-modal-description" id="itemModalDescription"></p>
+   <div class="item-modal-pills" id="itemModalOptions" hidden></div>
+   <div class="item-modal-note" id="itemModalNote" hidden></div>
+   <a class="modal-order" id="itemModalOrder" href="https://wa.me/9100000000?text=Hi%20Saffron%20%26%20Hearth%20Restaurant" target="_blank" rel="noopener">Order on WhatsApp ↗</a>
+  </div></div>
+ </div>
+</div>
+
+<script>
+const siteHeader=document.getElementById('siteHeader');
+function syncHeaderHeight(){document.documentElement.style.setProperty('--header-h',siteHeader.offsetHeight+'px');}
+syncHeaderHeight();
+window.addEventListener('resize',syncHeaderHeight);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(syncHeaderHeight);
+window.addEventListener('load',syncHeaderHeight);
+
+const mobileMenuButton=document.getElementById('mobileMenuButton');
+const mobileNav=document.getElementById('mobileNav');
+function closeMobileNav(){mobileNav.classList.remove('active');mobileMenuButton.setAttribute('aria-expanded','false');document.body.classList.remove('nav-open');}
+mobileMenuButton.addEventListener('click',()=>{const open=mobileNav.classList.toggle('active');mobileMenuButton.setAttribute('aria-expanded',String(open));document.body.classList.toggle('nav-open',open);});
+document.querySelectorAll('.mobile-nav a').forEach(link=>link.addEventListener('click',closeMobileNav));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMobileNav();});
+
+const modal=document.getElementById('itemModal');
+const modalClose=document.getElementById('itemModalClose');
+const modalImage=document.getElementById('itemModalImage');
+const modalPrice=document.getElementById('itemModalPrice');
+const modalDesc=document.getElementById('itemModalDescription');
+const modalOptions=document.getElementById('itemModalOptions');
+const modalNote=document.getElementById('itemModalNote');
+const modalOrder=document.getElementById('itemModalOrder');
+const WHATSAPP='https://wa.me/9100000000';
+let previouslyFocused=null;
+
+function money(n){return 'Rs '+Number(n).toLocaleString('en-US');}
+function priceRow(label,value){
+ const row=document.createElement('div');row.className='price-row';
+ const l=document.createElement('span');l.className='price-label';l.textContent=label||'';
+ const d=document.createElement('span');d.className='dots';d.setAttribute('aria-hidden','true');
+ const v=document.createElement('span');v.className='price-value';v.textContent=money(value);
+ row.append(l,d,v);return row;
+}
+function openItemModal(card){
+ const d=card.dataset;
+ previouslyFocused=document.activeElement;
+ modalImage.src=d.image||'';modalImage.alt=d.name||'';
+ document.getElementById('itemModalCategory').textContent=d.cat||'';
+ document.getElementById('itemModalTitle').textContent=d.name||'';
+ modalPrice.replaceChildren();
+ let prices=[];try{prices=JSON.parse(d.prices||'[]');}catch(err){prices=[];}
+ prices.forEach(p=>modalPrice.append(priceRow(p.label,p.price)));
+ modalDesc.textContent=d.desc||'';modalDesc.hidden=!d.desc;
+ let options=[];try{options=JSON.parse(d.options||'[]');}catch(err){options=[];}
+ modalOptions.replaceChildren();
+ options.forEach(o=>{const s=document.createElement('span');s.className='pill';s.textContent=o;modalOptions.append(s);});
+ modalOptions.hidden=options.length===0;
+ modalNote.textContent=d.note||'';modalNote.hidden=!d.note;
+ modalOrder.href=WHATSAPP+'?text='+encodeURIComponent("I'd like to order: "+(d.name||''));
+ modal.classList.add('active');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');
+ modalClose.focus();
+}
+function closeItemModal(){
+ modal.classList.remove('active');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');
+ if(previouslyFocused&&typeof previouslyFocused.focus==='function')previouslyFocused.focus();
+}
+document.querySelectorAll('.menu-item').forEach(card=>{
+ card.addEventListener('click',()=>openItemModal(card));
+ card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openItemModal(card);}});
+});
+modalClose.addEventListener('click',closeItemModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeItemModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('active'))closeItemModal();});
+const menuSection=document.getElementById('menu');
+const menuCategories=document.getElementById('menuCategories');
+const filterPills=[...document.querySelectorAll('.menu-nav a[data-filter]')];
+const menuCats=[...menuCategories.querySelectorAll('.menu-cat')];
+function applyFilter(filter){
+ const all=filter==='all';
+ menuCats.forEach(s=>{s.hidden=!all&&s.id!==filter;});
+ filterPills.forEach(p=>p.setAttribute('aria-current',p.dataset.filter===filter?'true':'false'));
+}
+applyFilter('all');
+filterPills.forEach(p=>p.addEventListener('click',e=>{
+ e.preventDefault();
+ e.stopImmediatePropagation();
+ const active=p.getAttribute('aria-current')==='true';
+ applyFilter(active?'all':p.dataset.filter);
+ menuSection.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+document.querySelectorAll('a[href="#menu"]').forEach(a=>a.addEventListener('click',()=>{
+ applyFilter('all');
+}));
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>anchor.addEventListener('click',e=>{
+ const href=anchor.getAttribute('href');if(!href||href==='#')return;
+ const target=document.getElementById(href.slice(1));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}
+}));
+</script>
+</body>
+</html>

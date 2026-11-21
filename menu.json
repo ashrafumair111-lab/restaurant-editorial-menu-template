@@ -1,0 +1,329 @@
+{
+  "restaurant": {
+    "name": "Saffron & Hearth",
+    "tagline": "Artisanal Dining",
+    "motto": "Flavours Baked with Care",
+    "hours": "11:30 AM – 10:00 PM",
+    "delivery": "Free delivery within Metropolitan District 3"
+  },
+  "categories": [
+    {
+      "id": "pide",
+      "name": "Pide",
+      "description": "Oven-baked flatbreads, lightly folded and roasted with a seasonal spread of toppings, made fresh for you to enjoy.",
+      "items": [
+        {
+          "id": "prosciutto-pide",
+          "name": "Prosciutto Pide",
+          "description": "Soft pide crust cradling thin slices of prosciutto, fresh mozzarella and a drizzle of aged olive oil.",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "8 Inch", "price": 320 },
+            { "label": "12 Inch", "price": 420 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "vegetable-pide",
+          "name": "Vegetable Pide",
+          "description": "Golden pide baked with mild peppers, fresh spinach and a hint of rosemary.",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "8 Inch", "price": 280 },
+            { "label": "12 Inch", "price": 380 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "feta-pide",
+          "name": "Feta Pide",
+          "description": "A touch of fragrant feta cheese and fresh thyme swiped across a softened pide.",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "8 Inch", "price": 290 },
+            { "label": "12 Inch", "price": 400 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "halal-snack-pack",
+      "name": "Halal Snack Pack",
+      "description": "A generous platter of vegetables and chicken, served on your chosen base.",
+      "chooseBase": "Choose your base",
+      "items": [
+        {
+          "id": "hsp-rice",
+          "name": "Rice",
+          "description": "",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "Small", "price": 300 },
+            { "label": "Regular", "price": 500 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "hsp-fries",
+          "name": "Fries",
+          "description": "",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "Small", "price": 300 },
+            { "label": "Regular", "price": 500 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "kebab",
+      "name": "Kebab",
+      "description": "Grilled succulent meat wrapped in warm bread, layered with crisp greens and a sweet, sharp glaze.",
+      "items": [
+        {
+          "id": "chicken-kebab",
+          "name": "Chicken Kebab",
+          "description": "Show-stopping chicken stick with a gleaming char, wrapped in fresh flatbread and finished with a fragrant drizzle.",
+          "image": "images/placeholder.svg",
+          "price": 400,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name": "Burgers",
+      "description": "Juicy, oven-baked patties nestled in soft buns, layered with fresh vegetables and our signature sauce.",
+      "items": [
+        {
+          "id": "chicken-tombik",
+          "name": "Chicken Tombik",
+          "description": "Soft toasted bread stuffed with juicy chicken, crisp lettuce and tomato, just hot out of the kitchen.",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "Regular", "price": 350 },
+            { "label": "Large", "price": 550 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "beef-tombik",
+          "name": "Beef Tombik",
+          "description": "Rich, slow-roasted beef wrapped in crisp tombik, served hot.",
+          "image": "images/placeholder.svg",
+          "sizes": [
+            { "label": "Regular", "price": 400 },
+            { "label": "Large", "price": 600 }
+          ],
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "description": "Crispy golden fish fillets, freshly prepared to order and served hot.",
+      "items": [
+        {
+          "id": "fish-and-chips",
+          "name": "Fish and Chips",
+          "description": "Crispy golden-battered fish fillet served alongside hot seasoned fries and our signature tartar sauce.",
+          "image": "images/placeholder.svg",
+          "price": 950,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "Sides",
+      "description": "Perfect alongside any dish.",
+      "items": [
+        {
+          "id": "hummus",
+          "name": "Hummus",
+          "description": "Smooth, creamy chickpea and tahini dip.",
+          "image": "images/placeholder.svg",
+          "price": 250,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "fries",
+          "name": "Fries",
+          "description": "Crispy golden fries.",
+          "image": "images/placeholder.svg",
+          "price": 300,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "gravy",
+          "name": "Gravy",
+          "description": "Rich, velvety gravy, perfect for dipping.",
+          "image": "images/placeholder.svg",
+          "price": 200,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "fries-gravy",
+          "name": "Fries + Gravy",
+          "description": "",
+          "image": "images/placeholder.svg",
+          "price": 450,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "soup",
+          "name": "Soup",
+          "description": "Warm, comforting house-made soup simmered with aromatic herbs and served fresh.",
+          "image": "images/placeholder.svg",
+          "price": 500,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Something to satisfy that post-dinner craving, straight from Turkey and Egypt.",
+      "items": [
+        {
+          "id": "umm-ali",
+          "name": "Umm Ali",
+          "description": "A warm bread pudding made with flaky pastry, milk, cream, nuts, and a hint of cinnamon, baked until golden and beautifully creamy.",
+          "image": "images/placeholder.svg",
+          "price": 800,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "firin-halva",
+          "name": "Firin Halva",
+          "description": "Oven-baked tahini halva, golden and buttery, rich and gently sweet.",
+          "image": "images/placeholder.svg",
+          "price": 600,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "chocolate-milkshake",
+          "name": "Chocolate Milkshake",
+          "description": "Thick, creamy chocolate milkshake blended with rich ice cream for a smooth, indulgent finish.",
+          "image": "images/placeholder.svg",
+          "price": 1200,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "name": "Hot Drinks",
+      "description": "Freshly brewed, served hot.",
+      "items": [
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": "Rich, bold coffee with a smooth, intense finish.",
+          "image": "images/placeholder.svg",
+          "price": 350,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "americano",
+          "name": "Americano",
+          "description": "Bold espresso poured over hot water for a rich, smooth cup.",
+          "image": "images/placeholder.svg",
+          "price": 350,
+          "options": [],
+          "note": "",
+          "needsConfirmation": false
+        },
+        {
+          "id": "latte",
+          "name": "Latte",
+          "description": "Espresso topped with steamed milk and a light foam.",
+          "image": "images/placeholder.svg",
+          "price": 500,
+          "options": [],
+          "note": "8oz",
+          "needsConfirmation": false
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino",
+          "description": "Rich espresso topped with velvety steamed milk and a generous layer of foam.",
+          "image": "images/placeholder.svg",
+          "price": 550,
+          "options": [],
+          "note": "8oz",
+          "needsConfirmation": false
+        },
+        {
+          "id": "mocha",
+          "name": "Mocha",
+          "description": "Espresso blended with smooth chocolate and steamed milk.",
+          "image": "images/placeholder.svg",
+          "price": 550,
+          "options": [],
+          "note": "8oz",
+          "needsConfirmation": false
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "Hot Chocolate",
+          "description": "Rich, creamy chocolate blended with steamed milk.",
+          "image": "images/placeholder.svg",
+          "price": 500,
+          "options": [],
+          "note": "8oz",
+          "needsConfirmation": false
+        }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Our Story",
+    "paragraphs": [
+      "Saffron & Hearth began as a small kitchen focused on simple truths: good oil, quality dough, and time spent on the dough.",
+      "It is now a restaurant built around fresh colours and textures, with menus updated for each season and dishes that invite sharing.",
+      "Meals are meant to be shared — have them served to you on foot."
+    ],
+    "signature": "Freshly Baked • Artisanal Flavours • Made with Care",
+    "deliveryNote": "Free delivery is available within Metropolitan District 3."
+  }
+}
